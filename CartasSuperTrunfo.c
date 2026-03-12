@@ -14,6 +14,8 @@ int main() {
             float area, pib;
 
   // Área para entrada de dados
+     
+  printf("*** Criando as Cartas do Super Trunfo *** \n \n");
 
         printf("digite o numero da carta: \n");
      scanf(" %d", &carta);
@@ -45,7 +47,7 @@ int main() {
      
        printf("digite quantidade de pontos turísticos na cidade: \n");
      scanf("%d", &turistico);
-     printf("Número de Pontos Turísticos: %d \n", turistico);  
+     printf("Número de Pontos Turísticos: %d \n\n\n", turistico);  
 
   // Área para exibição dos dados da cidade
 
