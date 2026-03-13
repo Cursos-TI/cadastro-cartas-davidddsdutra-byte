@@ -10,12 +10,15 @@ int main() {
               char estado1, estado2;
             char codigo1[4], codigo2[4];
             char cidade1[50], cidade2[50];
-            int populaçao1, turistico1, populaçao2, turistico2, carta1, carta2;
+            int turistico1, turistico2, carta1, carta2;
+            unsigned long int populaçao1, populaçao2;
             float area1, pib1, area2, pib2;
-            float densidade1 = (float) populaçao1 / area1;
+            float densidade1 = (float) populaçao1 / area1; 
             float densidade2 = (float) populaçao2 / area2;
             float pibpercapita1 = pib1 / populaçao1;
             float pibpercapita2 = pib2 / populaçao2;
+            float superpoder1, superpoder2;
+
 
 
   // Área para entrada de dados
@@ -81,7 +84,8 @@ int main() {
       densidade2 = (float)populaçao2 / area2;
       pibpercapita1 = pib1 / populaçao1;
       pibpercapita2 = pib2 / populaçao2;
-                       
+      superpoder1 = populaçao1 + area1 + pib1 + turistico1 + pibpercapita1 + (1 / densidade1);
+      superpoder2 = populaçao2 + area2 + pib2 + turistico2 + pibpercapita2 + (1 / densidade2);                 
 
      
 
@@ -111,5 +115,22 @@ printf("======= Carta 1 =======\n \n");
   printf("Número de Pontos Turísticos: %d \n", turistico2);
   printf("Densidade Populacional: %.2f hab/km² \n", densidade2);
   printf("PIB per Capita: %.2f reais \n\n", pibpercapita2);
+
+
+  // Coparaçoa das cartas
+
+        printf("==================== comparações entre as cartas ====================\n\n");
+          
+    printf("Populacao: Carta 1 venceu (%d)\n", populaçao1 > populaçao2);
+    printf("Area: Carta 1 venceu (%d)\n", area1 > area2);
+    printf("PIB: Carta 1 venceu (%d)\n", pib1 > pib2);
+    printf("Pontos Turisticos: Carta 1 venceu (%d)\n", turistico1 > turistico2);
+    printf("Densidade Populacional: Carta 1 venceu (%d)\n", densidade1 < densidade2);
+    printf("PIB per Capita: Carta 1 venceu (%d)\n", pibpercapita1 > pibpercapita2);
+    printf("Super Poder: Carta 1 venceu (%d)\n", superpoder1 > superpoder2);    
+
+
+
+
 return 0;
 } 
