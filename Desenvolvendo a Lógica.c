@@ -117,19 +117,48 @@ printf("======= Carta 1 =======\n \n");
   printf("PIB per Capita: %.2f reais \n\n", pibpercapita2);
 
 
-  // Coparaçoa das cartas
+  // Desenvolvendo a Lógica do Jogo
 
         printf("==================== comparações carta vencedora ====================\n\n");
-          
-    printf("Populacao: Carta 1 venceu (%d)\n", populaçao1 > populaçao2);
-    printf("Area: Carta 1 venceu (%d)\n", area1 > area2);
-    printf("PIB: Carta 1 venceu (%d)\n", pib1 > pib2);
-    printf("Pontos Turisticos: Carta 1 venceu (%d)\n", turistico1 > turistico2);
-    printf("Densidade Populacional: Carta 1 venceu (%d)\n", densidade1 < densidade2);
-    printf("PIB per Capita: Carta 1 venceu (%d)\n", pibpercapita1 > pibpercapita2);
-    printf("Super Poder: Carta 1 venceu (%d)\n\n", superpoder1 > superpoder2);    
-
-
+        
+    if (superpoder1 > superpoder2){
+        printf("Carta 1 é a vencedora!\n");
+    }else {
+        printf("Carta 2 é a vencedora!\n");
+    }
+    if (populaçao1 > populaçao2){
+        printf("Carta 1 tem a maior populaçao que carta 2: VENCEU!!\n");     
+    }else {
+        printf("Carta 2 tem a maior populaçao que carta 1: VENCEU!!\n");
+    }
+    if (area1 > area2){
+        printf("Carta 1 tem a maior AREA que carta 2: VENCEU!!\n");     
+    }else {
+        printf("Carta 2 tem a maior AREA que carta 1: VENCEU!!\n");
+    }
+    if (pib1 > pib2){
+        printf("Carta 1 tem o maior PIB que carta 2: VENCEU!!\n");     
+    }else {
+        printf("Carta 2 tem o maior PIB que carta 1: VENCEU!!\n");
+    }
+    if (turistico1 > turistico2){
+        printf("Carta 1 tem mais pontos turísticos que carta 2: VENCEU!!\n");     
+    }else {
+        printf("Carta 2 tem mais pontos turísticos que carta 1: VENCEU!!\n");
+    }
+    if (densidade1 > densidade2){
+        printf("Carta 1 tem a maior Densidade Populacional que carta 2: VENCEU!!\n");     
+    }else {
+        printf("Carta 2 tem a maior Densidade Populacional que carta 1: VENCEU!!\n");
+    }
+    if (pibpercapita1 > pibpercapita2){
+        printf("Carta 1 tem o maior PIB per Capita que carta 2: VENCEU!!\n");     
+    }else {
+        printf("Carta 2 tem o maior PIB per Capita que carta 1: VENCEU!!\n");
+    }
+    
+    
+    
 
 return 0;
 } 
