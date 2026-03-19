@@ -175,7 +175,7 @@ printf("======= Carta 1 =======\n \n");
     switch (opçao) {
         case 1:
             printf("Atributo: População\n");
-            printf("%s: %d hab/km² | %s: %d hab/km²\n", cidade1, populaçao1, cidade2, populaçao2);
+            printf("%s: %lu hab/km² | %s: %lu hab/km²\n", cidade1, populaçao1, cidade2, populaçao2);
             if (populaçao1 > populaçao2) printf("Vencedor: %s\n", cidade1);
             else if (populaçao2 > populaçao1) printf("Vencedor: %s\n", cidade2);
             else printf("Empate!\n");
