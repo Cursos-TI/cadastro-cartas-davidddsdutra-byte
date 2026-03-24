@@ -48,9 +48,9 @@ int main() {
                      scanf(" %[^\n]", cidade2);
      
        printf("digite o numero de populaçao dessa cidade 1: \n");
-     scanf(" %d", &populaçao1);
+     scanf(" %lu", &populaçao1);
                printf("digite o numero de populaçao dessa cidade 2: \n");
-                     scanf(" %d", &populaçao2);
+                     scanf(" %lu", &populaçao2);
      
        printf("digite a area da cidade em km² 1: \n");
      scanf(" %f", &area1);
